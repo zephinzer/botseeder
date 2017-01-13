@@ -10,7 +10,7 @@ const CONFIG = require('./config.json');
 /**
  * Set up an instance of our bot.
  */
-const bot = new Bot({
+const bot = new MessengerBot({
 	token: CONFIG.FACEBOOK_PAGE_TOKEN,
 	verify: CONFIG.FACEBOOK_VERIFY_TOKEN,
 	secret: CONFIG.FACEBOOK_APP_SECRET
