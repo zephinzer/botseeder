@@ -94,7 +94,7 @@ bot.on('message', function(payload, reply) {
 
 				/// send human response to user
 				reply(ourResponse, (err) => {
-					return displayError(err);
+					(err) && displayError(err);
 				});
 			});
 	});
